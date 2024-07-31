@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: activechat
+  threads:
+    virtual:
+      enabled: true
+  profiles:
+    include:
+      - dev
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  datasource:
+    hikari:
+      maximum-pool-size: 100
+      minimum-idle: 0
+server:
+  servlet:
+    application-display-name: activechat

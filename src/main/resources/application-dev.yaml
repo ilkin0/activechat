@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+#      password: password
+#      username: root
+#      database: activechatdb
+#      port: 27017
+      uri: 'mongodb://localhost:27017/activechatdb?authSource=admin&serverSelectionTimeoutMs=1000'
